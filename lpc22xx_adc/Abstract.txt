@@ -1,0 +1,33 @@
+Analog to Digital Converter Example Program
+===========================================
+
+This example program shows how to configure and use the
+A/D Converter of the following microcontrollers:
+
+* Philips LPC 2210/2290 (executes in internal RAM)
+* Philips LPC 2212/2214/2292/2294 (executes in internal Flash)
+
+After configuring the A/D Converter, the program reads
+A/D channel 0 and outputs the converted value using the serial 
+port.
+
+
+To run this program...
+
+1. Select the device group from the pull-down target list
+2. Select the device (Project - Options for Target - Device)
+2. Build the project (Project - Build Target)
+3. Start the uVision Debugger
+4. Open the Serial Window (View - Serial Window 1)
+5. Click Run (F5)
+6. Click on the Toolbox buttons to change input voltages
+
+
+A debug script (debug.ini) creates buttons that set different 
+analog values in A/D channels.  As the program runs, you 
+will see the A/D input and output change.
+
+Other buttons create signals that generate sine wave 
+or sawtooth patterns as analog inputs.  µVision3 users may 
+enable the built-in Logic Analyzer to view, measure and compare
+these input signals graphically.

@@ -1,0 +1,141 @@
+LARM LINKER/LOCATER V2.20a                                                              04/21/2005  14:01:18  PAGE 1
+
+
+LARM LINKER/LOCATER V2.20a, INVOKED BY:
+C:\KEIL\ARM\BIN\LA.EXE Startup.obj, ADC.obj, Serial.obj TO ADC CASE CLASSES (DATA (0X40000000-0X40003FFF), CODE (0X40000
+>> 000-0X40003FFF), CONST (0X40000000-0X40003FFF))
+
+
+CPU MODE: LITTLE ENDIAN
+
+
+INPUT MODULES INCLUDED:
+  Startup.obj (STARTUP)
+         COMMENT TYPE 0: AA V2.00
+  ADC.obj (ADC)
+         COMMENT TYPE 0: CARM V2.20a
+  Serial.obj (Serial)
+         COMMENT TYPE 0: CARM V2.20a
+  C:\KEIL\ARM\LIB\ART.LIB (SWI_VEC)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (FIQ)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (IRQ)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (DABT)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (PABT)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (UNDEF)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (printf)
+         COMMENT TYPE 0: CARM V2.20a
+  C:\KEIL\ARM\LIB\CAL.LIB (prnfmt)
+         COMMENT TYPE 0: CARM V2.20a
+  C:\KEIL\ARM\LIB\CAL.LIB (strlen)
+         COMMENT TYPE 0: CARM V2.20a
+  C:\KEIL\ARM\LIB\CAL.LIB (?C?ICALL)
+         COMMENT TYPE 0: AA V2.00
+  C:\KEIL\ARM\LIB\CAL.LIB (UDIV)
+         COMMENT TYPE 0: AA V2.00
+
+
+ACTIVE MEMORY CLASSES OF MODULE:  ADC (STARTUP)
+
+BASE       START      END        USED       MEMORY CLASS
+========================================================
+00000000H  40000000H  40003FFFH  00000494H  DATA
+00000000H  40000000H  40003FFFH  00000860H  CODE
+00000000H  40000000H  40003FFFH  00000044H  CONST
+
+
+
+MEMORY MAP OF MODULE:  ADC (STARTUP)
+
+START      STOP       LENGTH    ALIGN  RELOC  MEMORY CLASS   SEGMENT NAME
+=========================================================================
+40000000H  4000011FH  00000120H     4  AT..   CODE           STARTUPCODE
+40000120H  400005AFH  00000490H     4  UNIT   DATA           STACK
+400005B0H  400005D4H  00000025H     4  UNIT   CONST          ?CON?ADC
+400005D5H  400005D7H  00000003H   ---  ---    **GAP**
+400005D8H  400005DBH  00000004H     4  UNIT   DATA           ?DT0?ADC
+400005DCH  400005E2H  00000007H     4  UNIT   CONST          ?CON?prnfmt
+400005E3H  400005E3H  00000001H   ---  ---    **GAP**
+400005E4H  400005F3H  00000010H     4  UNIT   CONST          ?C_CLRSEG
+400005F4H  400005FBH  00000008H     4  UNIT   CONST          ?C_INITSEG
+400005FCH  400006C7H  000000CCH     4  UNIT   CODE           ?PR?main?ADC
+400006C8H  400006F3H  0000002CH     4  UNIT   CODE           ?PR?init_serial?T?Serial
+400006F4H  4000072BH  00000038H     4  UNIT   CODE           ?PR?putchar?T?Serial
+4000072CH  40000777H  0000004CH     4  UNIT   CODE           ?C?SWI
+LARM LINKER/LOCATER V2.20a                                                            04/21/2005  14:01:18  PAGE 2
+
+
+40000778H  4000077BH  00000004H     4  UNIT   CODE           ?C?FIQ
+4000077CH  4000077FH  00000004H     4  UNIT   CODE           ?C?IRQ
+40000780H  40000783H  00000004H     4  UNIT   CODE           ?C?DABT
+40000784H  40000787H  00000004H     4  UNIT   CODE           ?C?PABT
+40000788H  4000078BH  00000004H     4  UNIT   CODE           ?C?UNDEF
+4000078CH  400007BFH  00000034H     4  UNIT   CODE           ?PR?printf?T?printf
+400007C0H  400007EFH  00000030H     4  UNIT   CODE           ?PR?charout?T?prnfmt
+400007F0H  4000082BH  0000003CH     4  UNIT   CODE           ?PR?numout?T?prnfmt
+4000082CH  400008EBH  000000C0H     4  UNIT   CODE           ?PR?signout?T?prnfmt
+400008ECH  40000CC3H  000003D8H     4  UNIT   CODE           ?PR?__prnfmt?T?prnfmt
+40000CC4H  40000CE3H  00000020H     4  UNIT   CODE           ?PR?strlen?T?strlen
+40000CE4H  40000CF3H  00000010H     4  UNIT   CODE           ?PR?C?ICALL
+40000CF4H  40000D3BH  00000048H     4  UNIT   CODE           ?PR?C?UDIV
+
+
+
+REMOVED FUNCTIONS OF MODULE:  ADC (STARTUP)
+
+      ATTRIBUTE  FUNCTION NAME
+      ========================
+       unused    getchar?T
+
+
+
+PUBLIC SYMBOLS OF MODULE:  ADC (STARTUP)
+
+      VALUE      CLASS    TYPE      PUBLIC SYMBOL NAME
+      ================================================
+      400005E4H  ---      ---       ?C?CLRTAB
+      40000CE4H  CODE     ---       ?C?ICALL0?T
+      40000CE6H  CODE     ---       ?C?ICALL1?T
+      40000CE8H  CODE     ---       ?C?ICALL2?T
+      40000CEAH  CODE     ---       ?C?ICALL3?T
+      40000CECH  CODE     ---       ?C?ICALL4?T
+      40000CEEH  CODE     ---       ?C?ICALL5?T
+      40000CF0H  CODE     ---       ?C?ICALL6?T
+      40000CF2H  CODE     ---       ?C?ICALL7?T
+      400005FCH  ---      ---       ?C?INIT
+      400005F4H  ---      ---       ?C?INITTAB
+      40000CF8H  CODE     ---       ?C?UDIV?A
+      40000CF4H  CODE     ---       ?C?UDIV?T
+      4000076CH  CODE     ---       ?SWI?Empty
+      40000770H  CODE     ---       ?SWI?Table
+      40000780H  CODE     ---       DAbt_Handler?A
+      40000778H  CODE     ---       FIQ_Handler?A
+      4000077CH  CODE     ---       IRQ_Handler?A
+      40000784H  CODE     ---       PAbt_Handler?A
+      4000072CH  CODE     ---       SWI_Handler?A
+      40000788H  CODE     ---       Undef_Handler?A
+      400008ECH  CODE     ---       __prnfmt?A
+      400008F8H  CODE     ---       __prnfmt?T
+      40000000H  CODE     ---       __startup
+      400000FCH  CODE     ---       exit?A
+      40000100H  CODE     ---       exit?T
+      00000000H  CODE     ---       getchar?T
+      400006C8H  CODE     ---       init_serial?T
+      40000630H  CODE     ---       main
+      4000078CH  CODE     ---       printf?A
+      40000798H  CODE     ---       printf?T
+      400006F4H  CODE     ---       putchar?T
+      40000CC4H  CODE     ---       strlen?A
+      40000CD0H  CODE     ---       strlen?T
+      400005D8H  DATA     ---       val
+
+Program Size: data=1172 const=68 code=2144
+LARM LINKER/LOCATER V2.20a                                                            04/21/2005  14:01:18  PAGE 3
+
+
+LARM RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

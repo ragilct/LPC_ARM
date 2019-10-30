@@ -1,0 +1,17 @@
+The PWM project is a simple program for the LPC2129
+using Keil MCB2100 Microcontroller Board.
+
+It adjusts PWM2 and PWM3 phases according to the Potentiometer.
+
+The PWM program is available in different targets:
+  Simulator:      runs in software Simulator
+  MCB2100 RAM:    runs from Internal RAM located on chip
+                       (used for target debugging) 
+  MCB2100 Flash:  runs from Internal Flash located on chip
+                       (used for final aplication version)
+
+
+The output of PWM2 is P0.7; PWM3 can be found on P0.1
+
+The built-in Logic Analyzer shows the varying pulse width 
+as the input to the ADC changes.

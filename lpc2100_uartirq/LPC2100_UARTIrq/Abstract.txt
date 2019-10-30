@@ -1,0 +1,20 @@
+Interrupt-Driven UART I/O For Philips LPC2100 ARM Devices
+===========================================================
+This example program provides easily configurable interrupt-driven
+UART I/O routines.  The buffer sizes for receive and transmit may
+be independently configured to 2,4,8,16,32,64,128,... bytes long.
+
+Routines to send and receive characters are included along with
+routines that return the number of characters in either buffer.
+
+Included are fputc and fgetc routines that interface printf
+and scanf to the interrupt-driven serial I/O routines.
+
+UART I/O is handled in a separate file (SIO.C) that you can use
+in your own programs.  This example works with Philips LPC2100 devices.
+
+The program is available in different targets:
+  Simulator:  runs in software Simulator
+              Serial Window #2
+  MCB2100:    runs from Internal Flash located on chip
+              COM1, 115200 baud, 8 data bits, 1 stop bit, no parity 

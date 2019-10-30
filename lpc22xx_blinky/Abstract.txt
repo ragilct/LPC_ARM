@@ -1,0 +1,7 @@
+The BLINKY project is a simple example program for the LPC22xx.
+
+It does nothing more than blink an LED D3 on P0.8.
+
+The Blinky program is available in different targets:
+  Flash Mode:   runs in software Simulator from on-chip Flash
+  ExtMem Mode:  runs in software Simulator from off-chip ROM

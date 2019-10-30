@@ -1,0 +1,12 @@
+The following Philips LPC2k CAN examples are provided:
+
+LPC2_CANAll_V110:
+Receives all CAN messages in a receive queue.
+
+LPC2_CANFull_V110:
+Uses Full-CAN-like reception filtering.
+
+LPC2_CANBlinky_V130:
+Minimal example of MicroCANopen, uses Full-CAN-like 
+reception filtering and implements both Rx and Tx
+Interrupt Service Routines.
